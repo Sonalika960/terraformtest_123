@@ -7,7 +7,7 @@ resource "aws_instance" "web01"{
     instance_type = "t2.micro"
 
     tags= {
-        Name="demo1"
+        Name="tes1"
     }
 }
 
@@ -15,4 +15,5 @@ output "publicIP"{
     value = aws_instance.web01.public_ip
 
 }
+
 
