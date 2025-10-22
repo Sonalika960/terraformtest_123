@@ -1,14 +1,3 @@
-terraform { 
-  cloud { 
-    
-    organization = "Sikhnahaibhai" 
-
-    workspaces { 
-      name = "Dev" 
-    } 
-  } 
-}
-
 provider "aws"{
     region = "ap-south-1"
 }
@@ -24,4 +13,5 @@ resource "aws_instance" "web01"{
 
 output "publicIP"{
     value = aws_instance.web01.public_ip
+
 }
